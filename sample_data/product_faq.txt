@@ -1,0 +1,12 @@
+Q: Is my data sent to any third-party AI service?
+A: No. Embeddings and language model inference both run locally on your
+machine (sentence-transformers and Ollama respectively). Nothing leaves
+your server unless you configure a remote provider yourself.
+
+Q: What file types are supported?
+A: PDF, DOCX, TXT, and Markdown.
+
+Q: What happens if a document fails to process?
+A: Its status is marked "failed" with a specific error message (e.g.
+unsupported format, empty file, corrupted file) -- it never silently
+disappears or gets treated as processed.
