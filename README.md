@@ -2,15 +2,19 @@
 
 # 🤖 DOCUMIND AI
 
-### `AI-POWERED DOCUMENT INTELLIGENCE`
+### `AI-POWERED DOCUMENT INTELLIGENCE PLATFORM`
 
 **Understand your documents. Ask better questions. Keep your data local.**
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:0b1630,100:111827&height=180&section=header&text=DOCUMIND%20AI&fontSize=52&fontColor=00E5FF&animation=fadeIn&fontAlignY=38&desc=LOCAL%20RAG%20%7C%20PRIVATE%20AI%20%7C%20DOCUMENT%20INTELLIGENCE&descAlignY=62&descSize=16&descColor=9CA3AF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:0b1630,100:111827&height=200&section=header&text=DOCUMIND%20AI&fontSize=54&fontColor=00E5FF&animation=fadeIn&fontAlignY=38&desc=LOCAL%20RAG%20%7C%20PRIVATE%20AI%20%7C%20DOCUMENT%20INTELLIGENCE&descAlignY=63&descSize=16&descColor=9CA3AF" width="100%" alt="DocuMind AI Header"/>
 
 <br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=00E5FF&center=true&vCenter=true&width=850&lines=Local-First+AI+Document+Intelligence;Semantic+Search+%2B+RAG;Ask+Questions+About+Your+Documents;Private+Knowledge+%7C+Local+Inference;Your+Documents.+Your+Infrastructure.+Your+AI." alt="Typing Animation"/>
+
+<br><br>
 
 [![Python](https://img.shields.io/badge/Python-3.12+-00E5FF?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -22,7 +26,7 @@
 
 <br>
 
-**`[ SYSTEM ONLINE ]` · `[ RAG ENGINE READY ]` · `[ LOCAL AI ACTIVE ]`**
+`[ SYSTEM ONLINE ]` · `[ RAG ENGINE READY ]` · `[ LOCAL AI ACTIVE ]`
 
 </div>
 
@@ -30,189 +34,222 @@
 
 # 🧠 SYSTEM OVERVIEW
 
-> **DocuMind AI is a local-first document intelligence platform built to transform static documents into an intelligent, searchable knowledge system.**
+> **DocuMind AI is a local-first document intelligence platform that transforms static documents into an intelligent, searchable knowledge system.**
 
-Upload your documents.
+Upload your:
 
-Let the system extract, clean, chunk, embed and index them.
+* 📄 PDF files
+* 📝 DOCX documents
+* 📃 TXT files
+* 🧾 Markdown files
 
-Then ask questions in natural language.
+DocuMind validates, extracts, cleans, chunks, embeds and indexes your documents.
 
-DocuMind retrieves the most relevant document context and sends that context to a local LLM through Ollama to generate grounded answers with source information.
+You can then search your documents semantically or ask questions in natural language.
 
-### Core principle
+The RAG engine retrieves relevant document context and passes it to a local LLM through **Ollama**, producing grounded responses with source information.
+
+### Core Principle
 
 ```text
-┌───────────────────────────────────────────────────────────────┐
-│                        DOCUMIND AI                            │
-├───────────────────────────────────────────────────────────────┤
-│                                                               │
-│   YOUR DOCUMENTS                                              │
-│        │                                                      │
-│        ▼                                                      │
-│   ┌─────────────┐                                             │
-│   │ VALIDATION  │                                             │
-│   └──────┬──────┘                                             │
-│          ▼                                                    │
-│   ┌─────────────┐                                             │
-│   │ EXTRACTION  │                                             │
-│   └──────┬──────┘                                             │
-│          ▼                                                    │
-│   ┌─────────────┐                                             │
-│   │  CHUNKING   │                                             │
-│   └──────┬──────┘                                             │
-│          ▼                                                    │
-│   ┌─────────────┐                                             │
-│   │ EMBEDDINGS  │                                             │
-│   └──────┬──────┘                                             │
-│          ▼                                                    │
-│   ┌─────────────┐                                             │
-│   │  CHROMADB   │                                             │
-│   └──────┬──────┘                                             │
-│          │                                                    │
-│          ▼                                                    │
-│   ┌─────────────────────┐                                     │
-│   │ RETRIEVAL + OLLAMA  │                                     │
-│   └──────────┬──────────┘                                     │
-│              ▼                                                │
-│      ANSWER + CITATIONS                                       │
-│                                                               │
-└───────────────────────────────────────────────────────────────┘
+                    YOUR DOCUMENTS
+                           │
+                           ▼
+                    ┌─────────────┐
+                    │  VALIDATE   │
+                    └──────┬──────┘
+                           ▼
+                    ┌─────────────┐
+                    │  EXTRACT    │
+                    └──────┬──────┘
+                           ▼
+                    ┌─────────────┐
+                    │   CLEAN     │
+                    └──────┬──────┘
+                           ▼
+                    ┌─────────────┐
+                    │   CHUNK     │
+                    └──────┬──────┘
+                           ▼
+                    ┌─────────────┐
+                    │  EMBEDDING  │
+                    └──────┬──────┘
+                           ▼
+                    ┌─────────────┐
+                    │  CHROMADB   │
+                    └──────┬──────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ RETRIEVAL + OLLAMA  │
+                └──────────┬──────────┘
+                           ▼
+                  ANSWER + CITATIONS
 ```
 
 ---
 
-# ⚡ WHAT MAKES DOCUMIND DIFFERENT?
+# ⚡ WHY DOCUMIND AI?
 
-DocuMind is not simply a PDF chatbot.
+DocuMind is more than a basic PDF chatbot.
 
 It combines:
 
-* 🔐 **Local-first AI**
-* 🧠 **Retrieval-Augmented Generation**
-* 🔎 **Semantic document search**
-* 📚 **Citation-aware answers**
-* 👤 **Per-user document isolation**
-* 🗂️ **Persistent conversations**
-* 📊 **Real application analytics**
-* ⚙️ **Background document processing**
-* 🔌 **Provider abstraction**
-* 🚀 **REST API architecture**
-* 🐳 **Docker support**
-* 🧪 **Automated testing**
-
-The default architecture uses local Sentence Transformers for embeddings, ChromaDB for persistent vector storage and Ollama for local LLM inference.
-
----
-
-# 🖥️ INTERFACE // SYSTEM VISUALS
-
-## `01 — SPLASH SYSTEM`
-
-<p align="center">
-<img src="Screenshots/Splash.png" width="90%" alt="DocuMind AI Splash Screen">
-</p>
-
-> **Initializing intelligence layer...**
+| Capability              | Description                                                      |
+| ----------------------- | ---------------------------------------------------------------- |
+| 🔐 Local-First AI       | Keep AI inference and document processing on your infrastructure |
+| 🧠 RAG                  | Generate answers using retrieved document context                |
+| 🔎 Semantic Search      | Search by meaning instead of exact keywords                      |
+| 📚 Citations            | Connect answers to retrieved document sources                    |
+| 👤 User Isolation       | Keep each user's knowledge space separated                       |
+| 💬 Chat Memory          | Preserve document conversations                                  |
+| 📊 Analytics            | Track real application usage                                     |
+| ⚙️ Processing Pipeline  | Validate → Extract → Chunk → Embed → Index                       |
+| 🔌 Provider Abstraction | Swap AI/vector/document providers                                |
+| 🚀 REST API             | FastAPI-powered backend                                          |
+| 🐳 Docker               | Containerized deployment support                                 |
+| 🧪 Testing              | Unit, API and security-oriented testing                          |
 
 ---
 
-## `02 — AUTHENTICATION // LOGIN`
+# 🖥️ INTERFACE SHOWCASE
 
-<p align="center">
-<img src="Screenshots/Login Account.png" width="90%" alt="DocuMind AI Login">
-</p>
-
-Secure authentication creates isolated user workspaces.
+DocuMind provides a modern interface for authentication, document management, AI conversations, analytics and API interaction.
 
 ---
 
-## `03 — USER REGISTRATION`
+## `01 — SPLASH SCREEN`
 
 <p align="center">
-<img src="Screenshots/Register Account.png" width="90%" alt="DocuMind AI Registration">
+<img src="Screenshots/Splash.png" width="92%" alt="DocuMind AI Splash Screen"/>
 </p>
 
-Create a private workspace for documents, conversations and analytics.
+> **Initializing the DocuMind intelligence layer...**
 
 ---
 
-## `04 — COMMAND CENTER // DASHBOARD`
+## `02 — LOGIN // AUTHENTICATION`
 
 <p align="center">
-<img src="Screenshots/Dashboard.png" width="90%" alt="DocuMind AI Dashboard">
+<img src="Screenshots/Login Account.png" width="92%" alt="DocuMind AI Login"/>
 </p>
 
-### Dashboard intelligence layer
+Secure authentication creates an isolated workspace for every user.
+
+### Authentication includes
+
+* JWT authentication
+* Secure password hashing
+* Validation
+* Protected routes
+* User-specific resources
+
+---
+
+## `03 — REGISTRATION // CREATE WORKSPACE`
+
+<p align="center">
+<img src="Screenshots/Register Account.png" width="92%" alt="DocuMind AI Registration"/>
+</p>
+
+Users can create their own private DocuMind workspace for documents, conversations and analytics.
+
+---
+
+## `04 — DASHBOARD // COMMAND CENTER`
+
+<p align="center">
+<img src="Screenshots/Dashboard.png" width="92%" alt="DocuMind AI Dashboard"/>
+</p>
+
+The dashboard acts as the central command center.
 
 ```text
-DOCUMENTS        PROCESSED        CONVERSATIONS        STORAGE
-    │                │                  │                 │
-    └────────────────┴──────────────────┴─────────────────┘
-                             │
-                             ▼
-                    REAL APPLICATION DATA
+┌──────────────┐
+│  DOCUMENTS   │
+└──────┬───────┘
+       │
+┌──────▼───────┐
+│  PROCESSED   │
+└──────┬───────┘
+       │
+┌──────▼──────────┐
+│  CONVERSATIONS  │
+└──────┬──────────┘
+       │
+┌──────▼──────────┐
+│    STORAGE      │
+└──────┬──────────┘
+       │
+       ▼
+ REAL APPLICATION DATA
 ```
 
-The dashboard exposes document counts, processing status, conversations, storage usage and recent activity.
+Dashboard information includes:
+
+* Total documents
+* Processed documents
+* Conversations
+* Storage usage
+* Recent documents
+* Recent conversations
+* Processing status
 
 ---
 
 ## `05 — AI CHAT // NEURAL INTERFACE`
 
 <p align="center">
-<img src="Screenshots/AI Powered Chats.png" width="90%" alt="DocuMind AI Powered Chats">
+<img src="Screenshots/AI Powered Chats.png" width="92%" alt="DocuMind AI Chat"/>
 </p>
 
-Ask natural-language questions against your indexed documents.
+Ask natural-language questions about your indexed documents.
 
 ```text
-USER
- │
- │  "What are the main conclusions?"
- ▼
-┌──────────────────────┐
-│ QUESTION EMBEDDING   │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ VECTOR RETRIEVAL     │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ RELEVANT CHUNKS      │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ CONTEXT CONSTRUCTION  │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│ LOCAL LLM / OLLAMA   │
-└──────────┬───────────┘
-           ▼
-       AI RESPONSE
+USER QUESTION
+      │
+      ▼
+QUESTION EMBEDDING
+      │
+      ▼
+VECTOR RETRIEVAL
+      │
+      ▼
+RELEVANT CHUNKS
+      │
+      ▼
+CONTEXT CONSTRUCTION
+      │
+      ▼
+LOCAL LLM / OLLAMA
+      │
+      ▼
+AI RESPONSE
 ```
+
+The system retrieves relevant document context before generating the response.
 
 ---
 
-## `06 — CHAT MEMORY // HISTORY`
+## `06 — CHAT MEMORY // CONVERSATION HISTORY`
 
 <p align="center">
-<img src="Screenshots/Chat History.png" width="90%" alt="DocuMind AI Chat History">
+<img src="Screenshots/Chat History.png" width="92%" alt="DocuMind AI Chat History"/>
 </p>
 
-Persistent conversation history allows previous document interactions to remain accessible.
+Persistent conversation history keeps previous document interactions accessible.
+
+This allows users to continue working with their document knowledge without losing previous conversations.
 
 ---
 
 ## `07 — ANALYTICS // TELEMETRY`
 
 <p align="center">
-<img src="Screenshots/Analytics.png" width="90%" alt="DocuMind AI Analytics">
+<img src="Screenshots/Analytics.png" width="92%" alt="DocuMind AI Analytics"/>
 </p>
 
-DocuMind tracks meaningful application metrics including:
+DocuMind provides meaningful application analytics including:
 
 * Documents uploaded
 * Documents processed
@@ -223,172 +260,223 @@ DocuMind tracks meaningful application metrics including:
 * Response latency
 * Document usage
 
-No fabricated statistics are intentionally used.
+> Analytics are based on application data rather than intentionally fabricated statistics.
 
 ---
 
-# 🔌 API // MACHINE INTERFACE
+# 📡 API // MACHINE INTERFACE
 
-## REST API
-
-DocuMind exposes its application through a structured `/api/v1` REST API.
+DocuMind exposes a structured REST API under:
 
 ```text
 /api/v1
-│
-├── auth
-│   ├── POST /register
-│   ├── POST /login
-│   └── POST /logout
-│
-├── documents
-│   ├── POST   /
-│   ├── GET    /
-│   ├── GET    /{id}
-│   ├── DELETE /{id}
-│   └── GET    /{id}/status
-│
-├── chat
-│   └── POST /chat
-│
-├── conversations
-│   ├── GET    /
-│   ├── GET    /{id}
-│   └── DELETE /{id}
-│
-├── search
-│   └── GET /
-│
-├── analytics
-│   └── GET /
-│
-└── health
-    ├── GET /health
-    └── GET /api/v1/health
+```
+
+### Authentication
+
+```text
+POST /api/v1/auth/register
+POST /api/v1/auth/login
+POST /api/v1/auth/logout
+```
+
+### Documents
+
+```text
+POST   /api/v1/documents
+GET    /api/v1/documents
+GET    /api/v1/documents/{id}
+DELETE /api/v1/documents/{id}
+GET    /api/v1/documents/{id}/status
+```
+
+### Chat
+
+```text
+POST /api/v1/chat
+```
+
+### Conversations
+
+```text
+GET    /api/v1/conversations
+GET    /api/v1/conversations/{id}
+DELETE /api/v1/conversations/{id}
+```
+
+### Search
+
+```text
+GET /api/v1/search
+```
+
+### Analytics
+
+```text
+GET /api/v1/analytics
+```
+
+### Health
+
+```text
+GET /health
+GET /api/v1/health
 ```
 
 ---
 
-# 📡 API DOCUMENTATION
+# 📚 API DOCUMENTATION
 
-## Swagger
-
-<p align="center">
-<img src="Screenshots/API Documentation.png" width="90%" alt="DocuMind API Documentation">
-</p>
-
-## Extended API Documentation
+## `08 — SWAGGER DOCUMENTATION`
 
 <p align="center">
-<img src="Screenshots/API Documentation 2.png" width="90%" alt="DocuMind Extended API Documentation">
+<img src="Screenshots/API Documentation.png" width="92%" alt="DocuMind Swagger API Documentation"/>
 </p>
 
-## API Interface
+Interactive API documentation makes development and testing easier.
+
+---
+
+## `09 — EXTENDED API DOCUMENTATION`
 
 <p align="center">
-<img src="Screenshots/API.png" width="90%" alt="DocuMind API">
+<img src="Screenshots/API Documentation 2.png" width="92%" alt="DocuMind Extended API Documentation"/>
 </p>
+
+Explore endpoints, request schemas, authentication and API responses.
+
+---
+
+## `10 — API INTERFACE`
+
+<p align="center">
+<img src="Screenshots/API.png" width="92%" alt="DocuMind API Interface"/>
+</p>
+
+The API provides the machine interface connecting the frontend with the DocuMind backend services.
 
 ---
 
 # 🧬 RAG ENGINE
 
-DocuMind implements a classic retrieval-augmented architecture:
+DocuMind follows a Retrieval-Augmented Generation architecture.
 
 ```text
-                 ┌───────────────────┐
-                 │      DOCUMENT     │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │    VALIDATION     │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │  TEXT EXTRACTION  │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │      CLEANING     │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │      CHUNKING     │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │ LOCAL EMBEDDINGS  │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │     CHROMADB      │
-                 └─────────┬─────────┘
-                           │
-                    ┌──────┴──────┐
-                    │             │
-                    ▼             ▼
-               SEARCH QUERY   USER QUESTION
-                    │             │
-                    └──────┬──────┘
-                           ▼
-                 ┌───────────────────┐
-                 │ VECTOR RETRIEVAL  │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │ CONTEXT BUILDING  │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │      OLLAMA       │
-                 │    LOCAL LLM      │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │ ANSWER + SOURCES  │
-                 └───────────────────┘
+                  DOCUMENT
+                     │
+                     ▼
+                VALIDATION
+                     │
+                     ▼
+              TEXT EXTRACTION
+                     │
+                     ▼
+                  CLEANING
+                     │
+                     ▼
+                  CHUNKING
+                     │
+                     ▼
+              LOCAL EMBEDDINGS
+                     │
+                     ▼
+                  CHROMADB
+                     │
+                     ▼
+              VECTOR RETRIEVAL
+                     │
+                     ▼
+              RELEVANT CHUNKS
+                     │
+                     ▼
+             CONTEXT BUILDING
+                     │
+                     ▼
+                   OLLAMA
+                     │
+                     ▼
+                 LOCAL LLM
+                     │
+                     ▼
+              ANSWER + SOURCES
 ```
 
-This ingestion and question-answering flow is reflected in the repository's documented architecture.
+### Two major flows
+
+**Document ingestion**
+
+```text
+UPLOAD
+  ↓
+VALIDATE
+  ↓
+EXTRACT
+  ↓
+CLEAN
+  ↓
+CHUNK
+  ↓
+EMBED
+  ↓
+INDEX
+  ↓
+READY
+```
+
+**Question answering**
+
+```text
+QUESTION
+  ↓
+EMBED QUERY
+  ↓
+VECTOR SEARCH
+  ↓
+RETRIEVE CONTEXT
+  ↓
+BUILD PROMPT
+  ↓
+OLLAMA
+  ↓
+ANSWER + CITATIONS
+```
 
 ---
 
-# 🧠 AI PROVIDER ARCHITECTURE
+# 🔌 AI PROVIDER ARCHITECTURE
 
-DocuMind deliberately avoids hard-coding the entire system around one AI provider.
+DocuMind is intentionally designed around provider abstractions.
 
 ```text
-                 DOCUMIND CORE
-                      │
-          ┌───────────┼───────────┐
-          │           │           │
-          ▼           ▼           ▼
-       LLM        EMBEDDING    VECTOR STORE
-     PROVIDER      PROVIDER      PROVIDER
-          │           │           │
-          ▼           ▼           ▼
-       Ollama    Sentence       ChromaDB
-                  Transformers
+                         DOCUMIND CORE
+                              │
+              ┌───────────────┼───────────────┐
+              │               │               │
+              ▼               ▼               ▼
+         LLM PROVIDER    EMBEDDING PROVIDER  VECTOR STORE
+              │               │               │
+              ▼               ▼               ▼
+           Ollama       Sentence Transformers ChromaDB
 ```
 
-This abstraction makes alternative LLM, embedding, vector-store and document-extraction providers easier to add later.
+Core abstractions include:
+
+```text
+LLMProvider
+EmbeddingProvider
+VectorStore
+DocumentExtractor
+```
+
+This makes alternative providers easier to introduce without rewriting the complete RAG architecture.
 
 ---
 
 # 🔐 SECURITY // PRIVACY
 
-DocuMind follows a **local-first** security model.
+DocuMind is designed around a **local-first privacy model**.
 
-### User isolation
+### User Isolation
 
 ```text
 USER A                         USER B
@@ -398,7 +486,14 @@ USER A                         USER B
   └── Conversations A            └── Conversations B
 ```
 
-One authenticated user is prevented from accessing another user's documents through document APIs, search, vector retrieval, chat/RAG, deletion and conversation endpoints.
+A user cannot intentionally retrieve another user's documents through:
+
+* Document APIs
+* Semantic search
+* Vector retrieval
+* Chat/RAG
+* Delete operations
+* Conversation endpoints
 
 ### Security mechanisms
 
@@ -421,80 +516,66 @@ One authenticated user is prevented from accessing another user's documents thro
 
 ---
 
-# 📄 DOCUMENT SUPPORT
+# 📄 SUPPORTED DOCUMENTS
 
-| Format   | Status |
-| -------- | :----: |
-| PDF      |    ✅   |
-| DOCX     |    ✅   |
-| TXT      |    ✅   |
-| Markdown |    ✅   |
+|  Format  | Support |
+| :------: | :-----: |
+|    PDF   |    ✅    |
+|   DOCX   |    ✅    |
+|    TXT   |    ✅    |
+| Markdown |    ✅    |
 
-The extraction layer is provider-based so additional formats can be introduced without redesigning the complete system.
+The extraction layer uses a provider-based architecture, making future document formats easier to integrate.
 
 ---
 
-# ⚙️ PROCESSING PIPELINE
+# ⚙️ DOCUMENT PROCESSING
+
+Every uploaded document follows a controlled pipeline:
 
 ```text
-UPLOAD
-  │
-  ▼
-VALIDATE
-  │
-  ▼
-CHECKSUM / DUPLICATE CHECK
-  │
-  ▼
-EXTRACT
-  │
-  ▼
-CLEAN
-  │
-  ▼
-CHUNK
-  │
-  ▼
-EMBED
-  │
-  ▼
-INDEX
-  │
-  ▼
-READY
+┌──────────────┐
+│    UPLOAD    │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│   VALIDATE   │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│   CHECKSUM   │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│   EXTRACT    │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│    CLEAN     │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│    CHUNK     │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│    EMBED     │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│    INDEX     │
+└──────┬───────┘
+       ▼
+     READY
 ```
 
-A failed document is isolated from the rest of the API and its processing failure is retained as document status information.
+A failed document does not intentionally crash the complete API.
+
+Its processing state and error information are retained against the document.
 
 ---
 
-# 🧰 TECHNOLOGY MATRIX
-
-| Layer           | Technology            |
-| --------------- | --------------------- |
-| Backend         | Python 3.12+          |
-| API             | FastAPI               |
-| ORM             | SQLAlchemy 2          |
-| Validation      | Pydantic v2           |
-| Authentication  | JWT + bcrypt          |
-| Migrations      | Alembic               |
-| Embeddings      | Sentence Transformers |
-| LLM Runtime     | Ollama                |
-| Vector Database | ChromaDB              |
-| PDF Extraction  | PyMuPDF               |
-| DOCX Extraction | python-docx           |
-| Frontend        | React                 |
-| Language        | TypeScript            |
-| Build Tool      | Vite                  |
-| Testing         | Pytest                |
-| Linting         | Ruff                  |
-| Containers      | Docker                |
-| Orchestration   | Docker Compose        |
-| CI              | GitHub Actions        |
-
----
-
-# 🏗️ ARCHITECTURE
+# 🏗️ SYSTEM ARCHITECTURE
 
 ```text
                          ┌───────────────┐
@@ -517,21 +598,18 @@ A failed document is isolated from the rest of the API and its processing failur
           │                     │                     │
           ▼                     ▼                     ▼
    AUTHENTICATION        DOCUMENT SERVICE       CHAT SERVICE
-          │                     │                     │
-          │                     ▼                     │
-          │              TEXT EXTRACTION             │
-          │                     │                     │
-          │                     ▼                     │
-          │                  CHUNKING                 │
-          │                     │                     │
-          │                     ▼                     │
-          │              EMBEDDING MODEL              │
-          │                     │                     │
-          │                     ▼                     │
-          │                 CHROMADB                  │
-          │                     ▲                     │
-          │                     │                     │
-          └─────────────────────┼─────────────────────┘
+                                │                     │
+                                ▼                     │
+                         TEXT EXTRACTION              │
+                                │                     │
+                                ▼                     │
+                            CHUNKING                  │
+                                │                     │
+                                ▼                     │
+                        EMBEDDING MODEL               │
+                                │                     │
+                                ▼                     │
+                            CHROMADB ◄────────────────┘
                                 │
                                 ▼
                              OLLAMA
@@ -542,75 +620,102 @@ A failed document is isolated from the rest of the API and its processing failur
 
 ---
 
-# 🗂️ PROJECT STRUCTURE
+# 🧰 TECHNOLOGY STACK
+
+| Layer              | Technology            |
+| ------------------ | --------------------- |
+| 🐍 Backend         | Python 3.12+          |
+| ⚡ API              | FastAPI               |
+| 🗃️ ORM            | SQLAlchemy 2          |
+| ✅ Validation       | Pydantic v2           |
+| 🔐 Authentication  | JWT + bcrypt          |
+| 🗄️ Migrations     | Alembic               |
+| 🧠 Embeddings      | Sentence Transformers |
+| 🤖 LLM Runtime     | Ollama                |
+| 🧬 Vector Database | ChromaDB              |
+| 📄 PDF Extraction  | PyMuPDF               |
+| 📝 DOCX Extraction | python-docx           |
+| ⚛️ Frontend        | React                 |
+| 📘 Language        | TypeScript            |
+| ⚡ Build Tool       | Vite                  |
+| 🧪 Testing         | Pytest                |
+| 🧹 Linting         | Ruff                  |
+| 🐳 Containers      | Docker                |
+| 🔗 Orchestration   | Docker Compose        |
+| 🔄 CI              | GitHub Actions        |
+
+---
+
+# 💰 ZERO-COST LOCAL AI
+
+The default DocuMind architecture does **not require paid AI APIs**.
+
+You do not need:
 
 ```text
-Documind_AI/
-│
-├── app/
-│   ├── api/
-│   ├── core/
-│   ├── db/
-│   ├── models/
-│   ├── schemas/
-│   ├── repositories/
-│   ├── services/
-│   ├── providers/
-│   │   ├── embeddings/
-│   │   ├── llm/
-│   │   ├── vector_store/
-│   │   └── document_extractors/
-│   ├── workers/
-│   ├── prompts/
-│   └── utils/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── tests/
-├── alembic/
-│   └── versions/
-│
-├── docs/
-│   ├── API.md
-│   ├── TECHNOLOGY_DECISIONS.md
-│   └── screenshots/
-│
-├── sample_data/
-│
-├── .github/
-│   ├── workflows/
-│   ├── ISSUE_TEMPLATE/
-│   └── pull_request_template.md
-│
-├── Dockerfile
-├── docker-compose.yml
-├── pyproject.toml
-├── .env.example
-├── SECURITY.md
-├── CONTRIBUTING.md
-├── CHANGELOG.md
-└── README.md
+✗ OpenAI API
+✗ Anthropic API
+✗ Google Gemini API
+✗ Pinecone
+✗ AWS
+✗ Azure
+✗ Paid vector databases
+✗ Paid inference APIs
 ```
+
+Instead:
+
+```text
+DOCUMENTS
+    │
+    ▼
+LOCAL EMBEDDINGS
+    │
+    ▼
+CHROMADB
+    │
+    ▼
+OLLAMA
+    │
+    ▼
+LOCAL LLM
+    │
+    ▼
+PRIVATE ANSWERS
+```
+
+> **Your documents can remain on your machine.**
 
 ---
 
 # 🚀 QUICK START
 
-## 1. Clone
+## Requirements
+
+Install:
+
+* Python 3.12+
+* Node.js 18+
+* Ollama
+* Git
+* Docker *(optional)*
+
+---
+
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/MUdevelops/Documind_AI.git
 cd Documind_AI
 ```
 
-## 2. Create Python environment
+---
+
+## 2. Create Python Environment
 
 ### Windows
 
-```bash
+```powershell
 python -m venv .venv
 .venv\Scripts\activate
 ```
@@ -622,17 +727,21 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-## 3. Install backend
+---
+
+## 3. Install Backend
 
 ```bash
 pip install -e ".[dev]"
 ```
 
-## 4. Configure environment
+---
+
+## 4. Configure Environment
 
 ### Windows
 
-```bash
+```powershell
 copy .env.example .env
 ```
 
@@ -642,34 +751,50 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Never commit your `.env` file.
+Review your environment configuration before starting the application.
+
+> ⚠️ Never commit `.env`.
 
 ---
 
 # 🤖 ACTIVATE LOCAL AI
 
-Install Ollama, then download the configured model:
+Install Ollama and download the configured local model.
 
 ```bash
 ollama pull llama3.1
 ```
 
-Start the local model service:
+Start Ollama:
 
 ```bash
 ollama serve
 ```
 
-DocuMind uses Sentence Transformers for local embeddings, which are downloaded once and cached locally.
+Check installed models:
+
+```bash
+ollama list
+```
+
+DocuMind uses Sentence Transformers for local embeddings.
+
+The configured embedding model is downloaded once and cached locally.
 
 ---
 
-# 🗄️ DATABASE
+# 🗄️ DATABASE SETUP
 
 Run migrations:
 
 ```bash
 alembic upgrade head
+```
+
+Check migration state:
+
+```bash
+alembic current
 ```
 
 ---
@@ -720,6 +845,8 @@ http://localhost:5173
 
 # 🐳 DOCKER MODE
 
+Build and start:
+
 ```bash
 docker compose up --build
 ```
@@ -730,7 +857,7 @@ Check containers:
 docker compose ps
 ```
 
-Stop:
+Stop services:
 
 ```bash
 docker compose down
@@ -764,7 +891,7 @@ Formatting:
 ruff format --check .
 ```
 
-Recommended development check:
+Recommended development workflow:
 
 ```bash
 ruff check .
@@ -772,41 +899,72 @@ ruff format --check .
 pytest
 ```
 
-The repository includes unit, API and security-oriented tests, including cross-user document isolation checks.
+Testing covers areas such as:
+
+```text
+UNIT TESTS
+   │
+   ├── Extraction
+   ├── Cleaning
+   ├── Chunking
+   ├── Embeddings
+   ├── Retrieval
+   └── Authentication
+
+API TESTS
+   │
+   ├── Registration
+   ├── Login
+   ├── Documents
+   ├── Search
+   ├── Chat
+   └── Analytics
+
+SECURITY TESTS
+   │
+   └── Cross-user isolation
+```
 
 ---
 
 # 🩺 HEALTH MONITORING
 
-DocuMind exposes health information across the major system dependencies:
+DocuMind exposes health information for major system dependencies:
 
 ```text
-                 APPLICATION
-                      │
-          ┌───────────┼───────────┐
-          ▼           ▼           ▼
-      DATABASE    VECTOR STORE    LLM
+                  APPLICATION
+                       │
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+      DATABASE     VECTOR STORE     LLM
 ```
 
-This allows local troubleshooting without exposing sensitive configuration.
+Available endpoints:
+
+```text
+GET /health
+GET /api/v1/health
+```
+
+These help troubleshoot local deployments without exposing sensitive configuration.
 
 ---
 
 # 🛠️ CLI
 
-Health:
+### Health
 
 ```bash
 python -m app.cli health
 ```
 
-Reindex documents:
+### Reindex Documents
 
 ```bash
 python -m app.cli reindex
 ```
 
-Create an administrator:
+### Create Administrator
 
 ```bash
 python -m app.cli create-admin \
@@ -814,54 +972,103 @@ python -m app.cli create-admin \
   --password changeme123
 ```
 
-> ⚠️ Demo credentials should only be used during local development.
+> ⚠️ Demo credentials should only be used for local development.
 
 ---
 
-# ⚠️ CURRENT LIMITATIONS
+# ⚙️ ENVIRONMENT VARIABLES
 
-DocuMind is ambitious, but it is not magic.
+Example configuration:
 
-Current limitations include:
+```env
+DATABASE_URL=
+SECRET_KEY=
 
-* Scanned/image-only PDFs do not currently have OCR enabled.
-* Chunking is currently character-based rather than fully token-aware.
-* Background processing is designed primarily for local/single-node operation.
-* Local LLM performance depends heavily on available CPU, GPU and RAM.
-* Larger models can require significant system resources.
-* Streaming behavior depends on the selected LLM provider implementation.
+VECTOR_DB_PATH=
 
----
+LLM_PROVIDER=
+LLM_MODEL=
 
-# 🛣️ ROADMAP // NEXT EVOLUTION
+EMBEDDING_MODEL=
 
-```text
-CURRENT
-  │
-  ├── Local RAG
-  ├── Semantic Search
-  ├── Citation-aware Q&A
-  ├── Local LLM
-  ├── Analytics
-  └── Secure User Isolation
-          │
-          ▼
-NEXT
-  │
-  ├── OCR
-  ├── Token-aware chunking
-  ├── Hybrid retrieval
-  ├── Reranking
-  ├── Streaming responses
-  ├── Multi-document reasoning
-  ├── Advanced previews
-  ├── More LLM providers
-  ├── Distributed workers
-  ├── Production observability
-  └── Kubernetes / S3 deployment
+MAX_UPLOAD_SIZE=
+
+CORS_ORIGINS=
+
+CHUNK_SIZE=
+CHUNK_OVERLAP=
+
+TOP_K=
+SIMILARITY_THRESHOLD=
 ```
 
-The repository already identifies these areas as future improvements.
+See:
+
+```text
+.env.example
+```
+
+for the complete configuration.
+
+---
+
+# 📁 PROJECT STRUCTURE
+
+```text
+Documind_AI/
+│
+├── app/
+│   ├── api/
+│   ├── core/
+│   ├── db/
+│   ├── models/
+│   ├── schemas/
+│   ├── repositories/
+│   ├── services/
+│   ├── providers/
+│   │   ├── embeddings/
+│   │   ├── llm/
+│   │   ├── vector_store/
+│   │   └── document_extractors/
+│   ├── workers/
+│   ├── prompts/
+│   └── utils/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── tests/
+│
+├── alembic/
+│   └── versions/
+│
+├── docs/
+│   ├── API.md
+│   ├── TECHNOLOGY_DECISIONS.md
+│   └── screenshots/
+│
+├── sample_data/
+│
+├── .github/
+│   ├── workflows/
+│   ├── ISSUE_TEMPLATE/
+│   └── pull_request_template.md
+│
+├── .env.example
+├── .gitignore
+├── .dockerignore
+├── Dockerfile
+├── docker-compose.yml
+├── pyproject.toml
+├── LICENSE
+├── SECURITY.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── CHANGELOG.md
+└── README.md
+```
 
 ---
 
@@ -874,17 +1081,17 @@ The repository already identifies these areas as future improvements.
 │                                                     │
 │   PRIVACY       → Keep data local                   │
 │   MODULARITY    → Abstract AI providers             │
-│   SECURITY      → Isolate every user's data         │
-│   TRACEABILITY  → Ground answers in retrieved data  │
-│   TESTABILITY   → Verify critical system behavior   │
-│   EXTENSIBILITY → Build for future providers        │
+│   SECURITY      → Isolate user data                 │
+│   TRACEABILITY  → Ground answers in sources         │
+│   TESTABILITY   → Verify critical behavior          │
+│   EXTENSIBILITY → Prepare for future providers      │
 │                                                     │
 └─────────────────────────────────────────────────────┘
 ```
 
 ---
 
-# 🧠 AI VIBING // DEVELOPMENT MODE
+# 🧠 AI ENGINE // SYSTEM STATUS
 
 ```text
 > INITIALIZING DOCUMIND CORE...
@@ -901,12 +1108,14 @@ The repository already identifies these areas as future improvements.
 > RUNNING TEST MATRIX .............. OK
 
 ╔══════════════════════════════════════════════╗
-║             ARTIFICIAL INTELLIGENCE         ║
+║                                              ║
+║           ARTIFICIAL INTELLIGENCE            ║
 ║                  ONLINE                      ║
 ║                                              ║
-║        DOCUMENTS → KNOWLEDGE → ANSWERS       ║
+║       DOCUMENTS → KNOWLEDGE → ANSWERS        ║
 ║                                              ║
-║              SYSTEM READY                    ║
+║               SYSTEM READY                   ║
+║                                              ║
 ╚══════════════════════════════════════════════╝
 ```
 
@@ -916,26 +1125,89 @@ The repository already identifies these areas as future improvements.
 
 ---
 
-# 📸 COMPLETE SCREENSHOT INDEX
+# ⚠️ CURRENT LIMITATIONS
 
-| Module              | Screenshot                            |
-| ------------------- | ------------------------------------- |
-| Splash              | `Screenshots/Splash.png`              |
-| Login               | `Screenshots/Login Account.png`       |
-| Registration        | `Screenshots/Register Account.png`    |
-| Dashboard           | `Screenshots/Dashboard.png`           |
-| AI Chat             | `Screenshots/AI Powered Chats.png`    |
-| Chat History        | `Screenshots/Chat History.png`        |
-| Analytics           | `Screenshots/Analytics.png`           |
-| API                 | `Screenshots/API.png`                 |
-| API Documentation   | `Screenshots/API Documentation.png`   |
-| API Documentation 2 | `Screenshots/API Documentation 2.png` |
+DocuMind is powerful, but it is not magic.
+
+Current limitations include:
+
+* Scanned/image-only PDFs do not currently have OCR enabled.
+* Chunking is currently character-based rather than fully token-aware.
+* Background processing is primarily designed for local/single-node deployments.
+* Local LLM performance depends heavily on CPU, GPU and RAM.
+* Larger models can require significant system resources.
+* Streaming behavior depends on the selected LLM provider implementation.
 
 ---
 
-# 🔒 SECURITY
+# 🛣️ ROADMAP // NEXT EVOLUTION
 
-If you discover a security vulnerability, please follow the responsible disclosure process described in [`SECURITY.md`](SECURITY.md) rather than immediately opening a public issue.
+```text
+                    CURRENT
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+    LOCAL RAG    SEMANTIC SEARCH   LOCAL LLM
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+                      NEXT
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+       OCR       HYBRID RETRIEVAL   RERANKING
+        │              │              │
+        ├──────────────┼──────────────┤
+        │              │              │
+    STREAMING    MULTI-DOCUMENT   TOKEN CHUNKING
+        │           REASONING          │
+        └──────────────┼──────────────┘
+                       ▼
+                  PRODUCTION
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+   DISTRIBUTED     OBSERVABILITY   KUBERNETES
+    WORKERS                           │
+        │                             │
+        └──────────────┬──────────────┘
+                       ▼
+                 S3 COMPATIBILITY
+```
+
+Planned areas include:
+
+* OCR pipeline
+* Token-aware chunking
+* Hybrid keyword + vector retrieval
+* Reranking models
+* Streaming LLM responses
+* Multi-document reasoning
+* Advanced document previews
+* Additional embedding providers
+* Additional local LLM providers
+* Distributed workers
+* Production observability
+* Kubernetes deployment
+* S3-compatible object storage
+* Role-based access control
+
+---
+
+# 📸 COMPLETE SCREENSHOT INDEX
+
+|  #  | Module                     | Screenshot                            |
+| :-: | -------------------------- | ------------------------------------- |
+|  01 | Splash Screen              | `Screenshots/Splash.png`              |
+|  02 | Login / Authentication     | `Screenshots/Login Account.png`       |
+|  03 | Registration               | `Screenshots/Register Account.png`    |
+|  04 | Dashboard                  | `Screenshots/Dashboard.png`           |
+|  05 | AI Powered Chat            | `Screenshots/AI Powered Chats.png`    |
+|  06 | Chat History               | `Screenshots/Chat History.png`        |
+|  07 | Analytics                  | `Screenshots/Analytics.png`           |
+|  08 | API Documentation          | `Screenshots/API Documentation.png`   |
+|  09 | Extended API Documentation | `Screenshots/API Documentation 2.png` |
+|  10 | API Interface              | `Screenshots/API.png`                 |
 
 ---
 
@@ -951,7 +1223,25 @@ ruff format --check .
 pytest
 ```
 
-Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing.
+Please review:
+
+```text
+CONTRIBUTING.md
+```
+
+before contributing.
+
+---
+
+# 🔒 SECURITY
+
+If you discover a security vulnerability, please follow the responsible disclosure process in:
+
+```text
+SECURITY.md
+```
+
+Please avoid immediately opening a public issue for sensitive vulnerabilities.
 
 ---
 
@@ -959,30 +1249,86 @@ Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) before contributing.
 
 DocuMind AI is released under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for the complete license text.
+See:
+
+```text
+LICENSE
+```
+
+for the complete license text.
 
 ---
 
-# 👨‍💻 BUILT BY MUDEVELOPS
+# ⭐ WHY DOCUMIND AI?
+
+DocuMind demonstrates practical production-oriented engineering across:
+
+```text
+Python Backend
+      +
+FastAPI
+      +
+REST APIs
+      +
+Authentication
+      +
+Database Engineering
+      +
+Document Processing
+      +
+Vector Databases
+      +
+Embeddings
+      +
+RAG
+      +
+Local LLMs
+      +
+React + TypeScript
+      +
+Docker
+      +
+Testing
+      +
+CI/CD
+      +
+Security
+      +
+AI Provider Abstraction
+```
+
+It is designed to be:
+
+**Understandable · Modular · Secure · Extensible · Local-First**
+
+---
 
 <div align="center">
 
-### `MUdevelops`
+# 🧠 DOCUMIND AI
 
-**AI • Full-Stack • Backend • Automation**
+### `DOCUMENTS → KNOWLEDGE → ANSWERS`
+
+**Understand your documents. Ask better questions. Keep your data local.**
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:0b1630,100:050816&height=150&section=footer&text=DOCUMIND%20AI&fontSize=38&fontColor=00E5FF&animation=twinkling&fontAlignY=65" width="100%" alt="DocuMind AI Footer"/>
+
+<br>
+
+### Built with 🧠 AI · ⚡ FastAPI · ⚛️ React · 🤖 Ollama · 🧬 ChromaDB
 
 <br>
 
 <a href="https://github.com/MUdevelops">
-<img src="https://img.shields.io/badge/GitHub-MUdevelops-111827?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-MUdevelops-111827?style=for-the-badge&logo=github&logoColor=white" alt="MUdevelops GitHub"/>
 </a>
 
 <br><br>
 
-> **Build systems. Build intelligence. Build locally.**
+**Build systems. Build intelligence. Build locally.**
 
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:0b1630,100:050816&height=120&section=footer&animation=fadeIn" width="100%"/>
+⭐ **Star the repository if you find DocuMind useful.**
 
 </div>
